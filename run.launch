@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+<include file="$(find clover)/launch/sitl.launch">
+    </include>
+<include file="$(find px4)/launch/posix_sitl.launch">
+    </include>
+</launch>
