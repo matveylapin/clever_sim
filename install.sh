@@ -51,4 +51,4 @@ export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$(pwd)
 export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$(pwd)/Tools/sitl_gazebo
 export GAZEBO_MODEL_PATH=$(pwd)/models:$GAZEBO_MODEL_PATH
 cd ../
-source ./env.sh
+source ./clever_sim/env.sh
