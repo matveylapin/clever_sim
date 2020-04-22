@@ -3,7 +3,7 @@
 mkdir -p catkin_ws/src
 cd catkin_ws/src
 cd ../
-catkin_make
+sudo catkin_make
 source devel/setup.bash
 cd src
 git clone https://github.com/CopterExpress/clever.git
@@ -22,7 +22,7 @@ rosdep install -y --from-paths src --ignore-src -r
 
 # END
 
-catkin_make #now!!!!!!!!!
+sudo catkin_make #now!!!!!!!!!
 source devel/setup.bash
 
 ### END
