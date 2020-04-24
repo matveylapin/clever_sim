@@ -40,7 +40,7 @@ rosdep update
 
 ### Установка 
 ```bash
-git clone https://github.com/vas0x59/clever_sim.git
+git clone https://github.com/matveylapin/clever_sim.git
 sudo ./clever_sim/install_dep.sh
 sudo ./clever_sim/install.sh
 ```
