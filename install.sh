@@ -6,7 +6,7 @@ sudo apt upgrade
 ./clever_sim/install_dep.sh
 ./clever_sim/install_ros.sh
 
-sudo apt autoremove
+sudo apt -y autoremove
 
 mkdir -p catkin_ws/src
 cd catkin_ws/src
