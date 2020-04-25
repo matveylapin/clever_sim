@@ -1,5 +1,8 @@
 #!/bin/bash
 ### CLEVER
+./clever_sim/install_dep.sh
+./clever_sim/install_ros.sh
+
 mkdir -p catkin_ws/src
 cd catkin_ws/src
 cd ../
@@ -49,6 +52,8 @@ cp -f ../clever_sim/worlds/empty.world ./Tools/sitl_gazebo/worlds
 source Tools/setup_gazebo.bash $(pwd) $(pwd)/build/px4_sitl_default
 export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$(pwd)
 export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$(pwd)/Tools/sitl_gazebo
+export GAZEBO_RESOURCE_PATH=$(pwd)/worlds:$GAZEBO_RESOURCE_PATH
 export GAZEBO_MODEL_PATH=$(pwd)/models:$GAZEBO_MODEL_PATH
+export SVGA_VGPU10=0
 cd ../
 source ./clever_sim/env.sh
