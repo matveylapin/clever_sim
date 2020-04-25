@@ -3,8 +3,8 @@
 sudo apt update
 sudo apt upgrade
 
-./clever_sim/install_dep.sh
 ./clever_sim/install_ros.sh
+./clever_sim/install_dep.sh
 
 sudo apt -y autoremove
 
