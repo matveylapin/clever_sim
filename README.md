@@ -28,14 +28,14 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 Для установки ROS требуется ввести команыды ниже по порядку.
 ```
 ```bash
-sudo apt-get update
-sudo apt-get install ros-melodic-desktop-full
-echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
-source ~/.bashrc
-sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
-sudo apt install python-rosdep
-sudo rosdep init
-rosdep update
+#sudo apt-get update
+#sudo apt-get install ros-melodic-desktop-full
+#echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+#source ~/.bashrc
+#sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
+#sudo apt install python-rosdep
+#sudo rosdep init
+#rosdep update
 ```
 
 ### Установка 
