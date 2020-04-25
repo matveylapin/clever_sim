@@ -1,10 +1,17 @@
 #!/bin/bash
 ### CLEVER
-sudo apt update
-sudo apt upgrade
+sudo apt -y update
+sudo apt -y upgrade
 
 ./clever_sim/install_ros.sh
+
+sudo apt -y update
+sudo apt -y upgrade
+sudo apt -y --fix-broken install
+
 ./clever_sim/install_dep.sh
+
+sudo apt -y --fix-broken install
 
 sudo apt -y autoremove
 
