@@ -38,4 +38,21 @@ roslaunch clever_sim/run.launch
 ```bash
 sudo nano ~/.ignition/fuel/config.yaml
 # и замените https://api.ignitionfuel.org на https://api.ignitionrobotics.org
+# далее Ctrl+X; Y; Enter
+```
+### Примечание 2
+```
+Если при запуске симулятора видите ошибку типа:
+[Err] [ ClientConfig.cc:222] Error copying default configuration file from
+Сделайте так:
+```
+```bash
+sudo rm ~/.ignition/fuel/config.yaml
+# и пробуйте снова запустить
+```
+
+### Примечание 3
+```
+Если в процессе выполнения команды install возникает ошибка проверьте примечание 1
+Или обратитесь ко мне
 ```
