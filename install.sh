@@ -17,10 +17,7 @@ sudo apt -y update
 
 echo -e "\e[1;42m ROS installation is successful \e[0m"
 
-echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
-source ~/.bashrc
-
-sudo apt -y install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
+sudo apt -y install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential python-catkin-tools
 sudo rosdep init
 {
     sudo rosdep init
@@ -57,6 +54,8 @@ sudo pip3 install setuptools pkgconfig wheel
 sudo pip3 install docopt argparse argcomplete coverage jinja2 empy numpy requests serial toml pyyaml cerberus
 
 wget -qO- https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh | sudo bash
+echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
 ### CLEVER
 
 sudo apt -y --fix-broken install
@@ -82,7 +81,7 @@ git clone https://github.com/CopterExpress/clever.git
 cd clever
 cd clover 
 
-sudo ../../../../clever_sim/patch_clever.sh
+sudo bash ../../../../clever_sim/patch_clever.sh
 # END
 
 # DEP
