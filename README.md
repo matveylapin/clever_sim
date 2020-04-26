@@ -16,16 +16,15 @@ sudo nano /etc/sudoers # в строку начинающуюся с sudo до�
 ```
 
 ### Примечание 2
-'''
+```
 Если при запуске симулятора видите ошибку типа:
 [Err] [REST.cc:205] Error in REST request
 Сделайте так:
-'''
-
-'''bash
+```
+```bash
 sudo nano ~/.ignition/fuel/config.yaml
 # и замените https://api.ignitionfuel.org на https://api.ignitionrobotics.org
-'''
+```
 
 ### Установка 
 ```bash
