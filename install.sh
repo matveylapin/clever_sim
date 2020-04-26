@@ -18,7 +18,6 @@ sudo apt -y update
 echo -e "\e[1;42m ROS installation is successful \e[0m"
 
 sudo apt -y install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential python-catkin-tools
-sudo rosdep init
 {
     sudo rosdep init
 } || {
