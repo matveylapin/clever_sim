@@ -3,6 +3,7 @@
 ```
 Для запуска необходимо установить ubuntu 18.04 и ros melodic 
 ```
+
 ### Примечание 1
 ```
 Желательно отключить запрос пароля для sudo.
@@ -15,28 +16,16 @@ sudo nano /etc/sudoers # в строку начинающуюся с sudo до�
 ```
 
 ### Примечание 2
-```
-Если вы работаете под Windows вы можете установить Ubuntu decktop. Найти его можно в Microsoft Store.
-Если при запуске приложения Ubuntu возникает ошибка, введите в командную строку Windows(запущеную от имени администратора) команду:
-```
-```bash
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-```
+'''
+Если при запуске симулятора видите ошибку типа:
+[Err] [REST.cc:205] Error in REST request
+Сделайте так:
+'''
 
-### Установка ROS milodic
-```
-Для установки ROS требуется ввести команыды ниже по порядку.
-```
-```bash
-#sudo apt-get update
-#sudo apt-get install ros-melodic-desktop-full
-#echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
-#source ~/.bashrc
-#sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
-#sudo apt install python-rosdep
-#sudo rosdep init
-#rosdep update
-```
+'''bash
+sudo nano ~/.ignition/fuel/config.yaml
+# и замените https://api.ignitionfuel.org на https://api.ignitionrobotics.org
+'''
 
 ### Установка 
 ```bash
@@ -47,8 +36,8 @@ sudo ./clever_sim/install.sh
 
 ### Запуск 
 ```bash
-source env.sh
-roslaunch run.launch 
+source clever_sim/env.sh
+roslaunch clever_sim/run.launch 
 ```
 
 
