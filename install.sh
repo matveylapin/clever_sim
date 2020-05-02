@@ -24,10 +24,20 @@ sudo apt -y install python-rosdep python-rosinstall python-rosinstall-generator 
     {
         rosdep init
     } || {
-        echo -e "\e[1;31m ROS init failed \e[0m"
-        exit
+        sudo rm -rf /opt/ros/rosdep/source.list.d/20-default.list
+        {
+            sudo rosdep init
+        } || {
+            {
+                rosdep init
+            } || {
+                echo -e "\e[1;31m ROS init failed \e[0m"
+                exit
+            }
+        }
     }
 }
+
 echo -e "\e[1;42m ROS init is succescful \e[0m"
 
 rosdep update
