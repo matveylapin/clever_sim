@@ -24,7 +24,7 @@ sudo apt -y install python-rosdep python-rosinstall python-rosinstall-generator 
     {
         rosdep init
     } || {
-        sudo rm -rf /opt/ros/rosdep/source.list.d/20-default.list
+        sudo rm -rf /etc/ros/rosdep/sources.list.d/20-default.list
         {
             sudo rosdep init
         } || {
