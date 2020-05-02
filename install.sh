@@ -46,10 +46,10 @@ sudo apt-get -y --quiet --no-install-recommends install bzip2 ca-certificates cc
 
 sudo apt install -y geographiclib-tools
 
-sudo pip install setuptools pkgconfig wheel
+sudo pip install setuptools pkgconfig wheel catkin_tools
 sudo pip install docopt argparse argcomplete coverage jinja2 empy numpy requests serial toml pyyaml cerberus
 
-sudo pip3 install setuptools pkgconfig wheel
+sudo pip3 install setuptools pkgconfig wheel catkin_tools
 sudo pip3 install docopt argparse argcomplete coverage jinja2 empy numpy requests serial toml pyyaml cerberus
 
 wget -qO- https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh | sudo bash

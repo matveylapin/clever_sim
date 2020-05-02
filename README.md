@@ -18,7 +18,7 @@ sudo nano /etc/sudoers # в строку начинающуюся с sudo до�
 ### Установка 
 ```bash
 git clone https://github.com/matveylapin/clever_sim.git
-sudo ./clever_sim/install.sh
+./clever_sim/install.sh
 ```
 
 ### Запуск 
